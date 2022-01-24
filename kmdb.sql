@@ -105,8 +105,8 @@ CREATE TABLE movie (
   name TEXT,
   year INTEGER,
   rating TEXT,
-  job_id INTEGER,
-  person_id INTEGER
+  person_id INTEGER,
+  job_id INTEGER
 );
 
 CREATE TABLE person (
@@ -128,8 +128,219 @@ CREATE TABLE job (
 
 CREATE TABLE job_inmovie (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  job_id INTEGER,
-  person_id INTEGER
+  person_id INTEGER,
+  job_id INTEGER
 );
 
-INSERT INTO 
+INSERT INTO character (
+    id,
+    name
+)
+VALUES (
+    "1",
+    "Bruce Wayne"
+),
+(
+    "2",
+    "Alfred"
+),
+(
+    "3",
+    "Ra's Al Ghul"
+),
+(
+    "4",
+    "Rachel Dawes"
+),
+(
+    "5",
+    "Commissioner Gordon"
+),
+(
+    "6",
+    "Joker"
+),
+(
+    "7",
+    "Harvey Dent"
+),
+(
+    "8",
+    "Bane"
+),
+(
+    "9",
+    "John Blake"
+),
+(
+    "10",
+    "Selina Kyle"
+),
+(
+    "11",
+    "Director"
+);
+
+
+INSERT INTO job (
+    id,
+    name
+)
+VALUES (
+    "1",
+    "Director"
+),
+(
+    "2",
+    "Top Cast"
+);
+
+INSERT INTO person (
+    id,
+    first_name,
+    last_name,
+    character_id
+)
+VALUES (
+    "1",
+    "Christian",
+    "Bale",
+    "1"
+),
+(
+    "2",
+    "Michael",
+    "Caine",
+    "2"
+),
+(
+    "3",
+    "Liam",
+    "Neeson",
+    "3"
+),
+(
+    "4",
+    "Katie",
+    "Holmes",
+    "4"
+),
+(
+    "5",
+    "Gary",
+    "Oldman",
+    "5"
+),
+(
+    "6",
+    "Heath",
+    "Ledger",
+    "6"
+),
+(
+    "7",
+    "Aaron",
+    "Eckhart",
+    "7"
+),
+(
+    "8",
+    "Maggie",
+    "Gyllenhaal",
+    "4"
+),
+(
+    "9",
+    "Tom",
+    "Hardy",
+    "8"
+),
+(
+    "10",
+    "Joseph",
+    "Gordon-Lewitt",
+    "9"
+),
+(
+    "11",
+    "Anne",
+    "Hathaway",
+    "10"
+),
+(
+    "12",
+    "Christopher",
+    "Nolan"
+    "11"
+);
+
+SELECT * FROM person;
+SELECT * FROM job;
+SELECT * FROM character;
+
+INSERT INTO job_inmovie (
+    id,
+    person_id,
+    job_id
+)
+VALUES (
+    "1",
+    "1",
+    "2"
+),
+(
+    "2",
+    "2",
+    "2"
+),
+(
+    "3",
+    "3",
+    "2"
+),
+(
+    "4",
+    "4",
+    "2"
+),
+(
+    "5",
+    "5",
+    "2"
+),
+(
+    "6",
+    "6",
+    "2"
+),
+(
+    "7",
+    "7",
+    "2"
+),
+(
+    "8",
+    "8",
+    "2"
+),
+(
+    "9",
+    "9",
+    "2"
+),
+(
+    "10",
+    "10",
+    "2"
+),
+(
+    "11",
+    "11",
+    "2"
+),
+(
+    "12",
+    "12",
+    "1"
+);
+
