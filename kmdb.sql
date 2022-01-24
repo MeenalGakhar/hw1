@@ -495,6 +495,11 @@ VALUES (
     "1" 
 );
 
-SELECT * FROM movie;
 
+SELECT movie.name, movie.year, movie.rating, person.first_name, person.last_name
+FROM movie
+INNER JOIN job on movie.job_id = job.ID
+INNER Join person on movie.person_id = person.id
+WHERE job.name = "Director"
+Group by movie.name;
 
