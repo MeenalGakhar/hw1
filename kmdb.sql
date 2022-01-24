@@ -270,13 +270,11 @@ VALUES (
 (
     "12",
     "Christopher",
-    "Nolan"
+    "Nolan",
     "11"
 );
 
-SELECT * FROM person;
-SELECT * FROM job;
-SELECT * FROM character;
+
 
 INSERT INTO job_inmovie (
     id,
@@ -496,3 +494,7 @@ VALUES (
     "12",
     "1" 
 );
+
+SELECT * FROM movie;
+
+
