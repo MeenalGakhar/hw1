@@ -344,3 +344,155 @@ VALUES (
     "1"
 );
 
+INSERT INTO movie (
+    id,
+    name,
+    year,
+    rating,
+    person_id,
+    job_id
+)
+VALUES (
+    "1",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "1",
+    "2"
+),
+(  
+    "2",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "2",
+    "2"
+),
+(
+    "3",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "3",
+    "2"
+),
+(
+    "4",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "4",
+    "2"
+),
+(
+    "5",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "5",
+    "2"
+),
+(
+    "6",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "1",
+    "2"
+),
+(
+    "7",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "6",
+    "2"
+),
+(
+    "8",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "7",
+    "2"
+),
+(
+    "9",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "2",
+    "2"
+),
+(
+    "10",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "8",
+    "2"
+),
+(
+    "11",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "1",
+    "2"
+),
+(
+    "12",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "5",
+    "2"
+),
+(
+    "13",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "9",
+    "2"
+),
+(
+    "14",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "10",
+    "2"
+),
+(
+    "15",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "11",
+    "2"
+),
+(
+    "16",
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "12",
+    "1"   
+),
+(
+    "17",
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "12",
+    "1" 
+),
+(
+    "18",
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "12",
+    "1" 
+);
