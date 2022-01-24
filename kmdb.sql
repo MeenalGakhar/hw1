@@ -495,6 +495,9 @@ VALUES (
     "1" 
 );
 
+.print "Movies"
+.print "======"
+.print ""
 
 SELECT movie.name, movie.year, movie.rating, person.first_name, person.last_name
 FROM movie
@@ -503,3 +506,15 @@ INNER Join person on movie.person_id = person.id
 WHERE job.name = "Director"
 Group by movie.name;
 
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+
+
+
+SELECT movie.name, person.first_name, person.last_name, character.name
+FROM movie
+INNER JOIN person ON person.id=movie.person_id
+INNER JOIN character ON character.id=person.character_id
+WHERE movie.job_id="2";
